@@ -1,0 +1,12 @@
+name: hello-world
+on: push
+jobs:
+
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden-Runner
+        uses: step-security/harden-runner@v2.10.2
+
+      - name: my-step
+        run: echo "Hello World!"
