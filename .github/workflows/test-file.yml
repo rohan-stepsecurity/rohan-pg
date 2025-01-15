@@ -33,8 +33,9 @@ jobs:
 
       - name: Load EKSConfigFile Configuration
         run: |
-          KUBERNETES_VERSION=$(yq '.KubernetesVersion.value' "$inputs.EksConfigFile")
-          AMI_TYPE=$(yq '.AMIType.value' "$inputs.EksConfigFile")
+          CONFIG_FILE="${{ inputs.EksConfigFile }}"
+          KUBERNETES_VERSION=$(yq '.KubernetesVersion.value' "$CONFIG_FILE")
+          AMI_TYPE=$(yq '.AMIType.value' "$CONFIG_FILE")
 
           echo "KUBERNETES_VERSION=$KUBERNETES_VERSION" >> $GITHUB_ENV
           echo "AMI_TYPE=$AMI_TYPE" >> $GITHUB_ENV
