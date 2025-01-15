@@ -1,0 +1,11 @@
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html
+KubernetesVersion:
+  description: "Kubernetes version in AWS EKS to host the runner cluster"
+  value: "1.29"
+
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-nodegroup.html#aws-resource-eks-nodegroup-properties
+AMIType:
+  description: "Linux distribution for the Kubernetes nodes"
+  value: "AL2_x86_64"
+
+# k8s_major_version.k8s_minor_version.k8s_patch_version-release_date
