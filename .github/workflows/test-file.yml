@@ -28,8 +28,8 @@ jobs:
 
       - name: Install yq for YAML manipulation
         run: |
-          sudo apt update
-          sudo apt install yq -y
+          wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq &&\
+          chmod +x /usr/bin/yq
 
       - name: Load EKSConfigFile Configuration
         run: |
