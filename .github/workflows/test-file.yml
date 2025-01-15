@@ -16,8 +16,6 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Harden-Runner
-        uses: step-security/harden-runner@f1db3319d7db49c70352da1f5d1a122f754e8c01 # int
 
       - name: my-step
         run: echo "Hello World!"
