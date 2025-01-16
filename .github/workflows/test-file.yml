@@ -64,4 +64,14 @@ jobs:
             echo "AMI Type: ${{ env.AMI_TYPE }}"
             echo "ClusterWidePolicyFile: ${{ env.ClusterWidePolicyFile }}"
             echo "ARCHardenRunnerReleaseBranch: ${{ env.ARCHardenRunnerReleaseBranch }}"
-    
+
+
+  output-job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Output Values
+          run: |
+              echo "Kubernetes Version: ${{ env.KUBERNETES_VERSION }}"
+              echo "AMI Type: ${{ env.AMI_TYPE }}"
+              echo "ClusterWidePolicyFile: ${{ env.ClusterWidePolicyFile }}"
+              echo "ARCHardenRunnerReleaseBranch: ${{ env.ARCHardenRunnerReleaseBranch }}"
