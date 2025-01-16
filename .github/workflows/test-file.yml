@@ -51,7 +51,7 @@ jobs:
           echo "KUBERNETES_VERSION=$KUBERNETES_VERSION" >> $GITHUB_ENV
           echo "AMI_TYPE=$AMI_TYPE" >> $GITHUB_ENV
 
-          ARC_CONFIG_JSON="${{ inputs.ArcConfig }}"
+          ARC_CONFIG_JSON='${{ inputs.ArcConfig }}'
           ClusterWidePolicyFile=$(echo "$ARC_CONFIG_JSON" | jq -r '.ClusterWidePolicyFile')
           ARCHardenRunnerReleaseBranch=$(echo "$ARC_CONFIG_JSON" | jq -r '.ARCHardenRunnerReleaseBranch')
 
