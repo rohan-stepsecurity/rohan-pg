@@ -8,6 +8,12 @@ on:
         type: string
         default: "default.yml"
       
+      ArcConfig:
+        description: "Config for ARC Harden Runner"
+        required: true
+        type: string
+        default: '{"ClusterWidePolicyFile" : "","ARCHardenRunnerReleaseBranch" : "int"}'
+      
 permissions:
   contents: read
 
@@ -26,6 +32,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
       - name: Install yq for YAML manipulation
         run: |
           sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq &&\
@@ -39,9 +50,18 @@ jobs:
 
           echo "KUBERNETES_VERSION=$KUBERNETES_VERSION" >> $GITHUB_ENV
           echo "AMI_TYPE=$AMI_TYPE" >> $GITHUB_ENV
+
+          ARC_CONFIG_FILE="${{ inputs.ArcConfig }}"
+          ClusterWidePolicyFile=$(jq -r '.ClusterWidePolicyFile' "$ARC_CONFIG_FILE")
+          ARCHardenRunnerReleaseBranch=$(jq -r '.ARCHardenRunnerReleaseBranch' "$ARC_CONFIG_FILE")
+
+          echo "ClusterWidePolicyFile=$ClusterWidePolicyFile" >> $GITHUB_ENV
+          echo "ARCHardenRunnerReleaseBranch=$ARCHardenRunnerReleaseBranch" >> $GITHUB_ENV
       
       - name: Output Values
         run: |
             echo "Kubernetes Version: ${{ env.KUBERNETES_VERSION }}"
             echo "AMI Type: ${{ env.AMI_TYPE }}"
+            echo "ClusterWidePolicyFile: ${{ env.AMI_TYPE }}"
+            echo "ARCHardenRunnerReleaseBranch: ${{ env.ARCHardenRunnerReleaseBranch }}"
     
