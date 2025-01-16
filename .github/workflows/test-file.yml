@@ -21,6 +21,11 @@ jobs:
 
   my-job:
     runs-on: ubuntu-latest
+    outputs:
+      KUBERNETES_VERSION: ${{ steps.load_config.outputs.KUBERNETES_VERSION }}
+      AMI_TYPE: ${{ steps.load_config.outputs.AMI_TYPE }}
+      ClusterWidePolicyFile: ${{ steps.load_config.outputs.ClusterWidePolicyFile }}
+      ARCHardenRunnerReleaseBranch: ${{ steps.load_config.outputs.ARCHardenRunnerReleaseBranch }}
     steps:
 
       - name: my-step
@@ -43,20 +48,25 @@ jobs:
           sudo chmod +x /usr/bin/yq
 
       - name: Load EKSConfigFile Configuration
+        id: load_config
         run: |
           CONFIG_FILE="${{ inputs.EksConfigFile }}"
           KUBERNETES_VERSION=$(yq '.KubernetesVersion.value' "$CONFIG_FILE")
           AMI_TYPE=$(yq '.AMIType.value' "$CONFIG_FILE")
 
           echo "KUBERNETES_VERSION=$KUBERNETES_VERSION" >> $GITHUB_ENV
+          echo "KUBERNETES_VERSION=$KUBERNETES_VERSION" >> $GITHUB_OUTPUT
           echo "AMI_TYPE=$AMI_TYPE" >> $GITHUB_ENV
+          echo "AMI_TYPE=$AMI_TYPE" >> $GITHUB_OUTPUT
 
           ARC_CONFIG_JSON='${{ inputs.ArcConfig }}'
           ClusterWidePolicyFile=$(echo "$ARC_CONFIG_JSON" | jq -r '.ClusterWidePolicyFile')
           ARCHardenRunnerReleaseBranch=$(echo "$ARC_CONFIG_JSON" | jq -r '.ARCHardenRunnerReleaseBranch')
 
           echo "ClusterWidePolicyFile=$ClusterWidePolicyFile" >> $GITHUB_ENV
+          echo "ClusterWidePolicyFile=$ClusterWidePolicyFile" >> $GITHUB_OUTPUT
           echo "ARCHardenRunnerReleaseBranch=$ARCHardenRunnerReleaseBranch" >> $GITHUB_ENV
+          echo "ARCHardenRunnerReleaseBranch=$ARCHardenRunnerReleaseBranch" >> $GITHUB_OUTPUT
       
       - name: Output Values
         run: |
@@ -72,7 +82,7 @@ jobs:
       steps:
         - name: Output Values
           run: |
-              echo "Kubernetes Version: ${{ env.KUBERNETES_VERSION }}"
-              echo "AMI Type: ${{ env.AMI_TYPE }}"
-              echo "ClusterWidePolicyFile: ${{ env.ClusterWidePolicyFile }}"
-              echo "ARCHardenRunnerReleaseBranch: ${{ env.ARCHardenRunnerReleaseBranch }}"
+              echo "Kubernetes Version: ${{ needs.my-job.outputs.KUBERNETES_VERSION }}"
+              echo "AMI Type: ${{ needs.my-job.outputs.AMI_TYPE }}"
+              echo "ClusterWidePolicyFile: ${{ needs.my-job.outputs.ClusterWidePolicyFile }}"
+              echo "ARCHardenRunnerReleaseBranch: ${{ needs.my-job.outputs.ARCHardenRunnerReleaseBranch }}"
