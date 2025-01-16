@@ -67,6 +67,7 @@ jobs:
 
 
   output-job:
+      needs: [my-job]
       runs-on: ubuntu-latest
       steps:
         - name: Output Values
