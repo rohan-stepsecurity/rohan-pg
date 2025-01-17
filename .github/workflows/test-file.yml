@@ -8,11 +8,11 @@ on:
         type: string
         default: "default.yml"
       
-      ArcConfig:
+      ArcConfigFile:
         description: "Config for ARC Harden Runner"
         required: true
         type: string
-        default: '{"ClusterWidePolicyFile" : "","ARCHardenRunnerReleaseBranch" : "int"}'
+        default: 'arc_config/default.json'
       
 permissions:
   contents: read
@@ -59,9 +59,9 @@ jobs:
           echo "AMI_TYPE=$AMI_TYPE" >> $GITHUB_ENV
           echo "AMI_TYPE=$AMI_TYPE" >> $GITHUB_OUTPUT
 
-          ARC_CONFIG_JSON='${{ inputs.ArcConfig }}'
-          ClusterWidePolicyFile=$(echo "$ARC_CONFIG_JSON" | jq -r '.ClusterWidePolicyFile')
-          ARCHardenRunnerReleaseBranch=$(echo "$ARC_CONFIG_JSON" | jq -r '.ARCHardenRunnerReleaseBranch')
+          ARC_CONFIG_FILE='${{ inputs.ArcConfigFile }}'
+          ClusterWidePolicyFile=$(jq -r '.ClusterWidePolicyFile' "$ARC_CONFIG_FILE")
+          ARCHardenRunnerReleaseBranch=$(jq -r '.ARCHardenRunnerReleaseBranch' "$ARC_CONFIG_FILE")
 
           echo "ClusterWidePolicyFile=$ClusterWidePolicyFile" >> $GITHUB_ENV
           echo "ClusterWidePolicyFile=$ClusterWidePolicyFile" >> $GITHUB_OUTPUT
