@@ -1,0 +1,33 @@
+name: Matrix Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: 
+        config: [no-harden-runner-bench, harden-runner-bench, tracer-runner-bench]
+    steps:
+    - name: Say Hello
+      run: |
+          sleep 5
+          echo "Hello from ${matrix.config}"
+          sleep 5
+
+  benchmark:
+    needs: [create]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config: [no-harden-runner-bench, harden-runner-bench, tracer-runner-bench]
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+      - name: Say Hello
+        run: |
+            sleep 5
+            echo "Hello from benchmark ${matrix.config}"
+            sleep 5
+      
