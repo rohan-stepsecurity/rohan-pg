@@ -13,7 +13,7 @@ jobs:
     - name: Say Hello
       run: |
           sleep 5
-          echo "Hello from ${matrix.config}"
+          echo "Hello from ${{matrix.config}}"
           sleep 5
 
   benchmark:
@@ -28,6 +28,6 @@ jobs:
       - name: Say Hello
         run: |
             sleep 5
-            echo "Hello from benchmark ${matrix.config}"
+            echo "Hello from benchmark ${{matrix.config}}"
             sleep 5
       
