@@ -49,10 +49,6 @@ jobs:
       - name: Execute
         working-directory: ./monitorbenchmark
         env:
-          WORKFLOW_FILE: stress-harden-runner.yml
-          RUNNER_LABEL: ${{ matrix.config.runner }}
-          USE_HARDEN_RUNNER: "true"
-          GITHUB_TOKEN: ${{ secrets.AUTHORIZED_GITHUB_PAT }}
           IS_REPORT : "true"
         run: |
           IS_REPORT=true make report
