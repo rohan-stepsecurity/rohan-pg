@@ -18,7 +18,7 @@ func main() {
 
 	if cfg.IsReport {
 
-		trials, err := report.ParseData("metrics")
+		trials, err := report.ParseData("../artifact")
 		if err != nil {
 			log.Fatalf("Error parsing data: %v", err)
 		}
