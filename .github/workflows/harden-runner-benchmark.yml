@@ -54,7 +54,7 @@ jobs:
           USE_HARDEN_RUNNER: "true"
           GITHUB_TOKEN: ${{ secrets.AUTHORIZED_GITHUB_PAT }}
           KUBE_TOKEN: ${{ env.KUBE_TOKEN }}
-          IS_REPORT : true
+          IS_REPORT : "true"
         run: |
-          make report
+          IS_REPORT=true make report
            
