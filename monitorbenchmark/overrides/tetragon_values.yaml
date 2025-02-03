@@ -1,0 +1,11 @@
+tetragon:
+  grpc:
+    address: ":54321"
+  enablePolicyFilter: "true"
+  extraArgs:
+    rb-size: "104857600"
+    event-queue-size: "500000"
+  resources:
+    requests:
+      memory: "1024Mi"
+      cpu: "1"

@@ -1,0 +1,66 @@
+name: Harden Runner Benchmark
+
+on:
+  workflow_dispatch:
+    inputs:
+      RunnerLabel:
+        description: "The Label of the runner where the workflow needs to run"
+        required: true
+        type: string
+        default: "current-harden-runner or tracer-runner"
+      UseHardenRunner:
+        description: "The Label of the runner where the workflow needs to run"
+        required: false
+        type: boolean
+        default: true
+
+jobs:
+
+  benchmark:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { runner: "no-harden-runner", cluster: "no-harden-runner-bench" }
+          #- { runner: "current-harden-runner", cluster: "harden-runner-bench" }
+          #- { runner: "tracer-harden-runner", cluster: "tracer-runner-bench" }
+        iteration: ["1","2","3"]
+    steps:
+
+      - name: Check out repository
+        uses: actions/checkout@v3
+      
+      - name: Upload Metrics Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          path: |
+            metrics/**
+          retention-days: 7
+        
+
+
+  gather-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: Check out repository
+        uses: actions/checkout@v3
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+      - name: Display structure of downloaded files
+        run: ls -R 
+      - name: Display pwd
+        run: pwd 
+
+      - name: Execute
+        working-directory: ./monitorbenchmark
+        env:
+          WORKFLOW_FILE: stress-harden-runner.yml
+          RUNNER_LABEL: ${{ matrix.config.runner }}
+          USE_HARDEN_RUNNER: "true"
+          GITHUB_TOKEN: ${{ secrets.AUTHORIZED_GITHUB_PAT }}
+          KUBE_TOKEN: ${{ env.KUBE_TOKEN }}
+          IS_REPORT : true
+        run: |
+          make report
+           

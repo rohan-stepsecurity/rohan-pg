@@ -1,0 +1,8 @@
+env:
+  customer: "step-security-experiments"
+  apiKey: "step_eb6501e6-3c1a-468c-a087-30b2b4a7fd58"
+  clusterName: "no-harden-runner"
+  stepSecurityApiEndpoint: "https://int.api.stepsecurity.io/v1"
+  dnsMode: "cilium"
+  arcRunnerNameSpaces:
+    - arc-runners

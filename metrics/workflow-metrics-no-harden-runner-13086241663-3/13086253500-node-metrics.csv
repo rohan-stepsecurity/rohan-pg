@@ -1,0 +1,334 @@
+ClusterVersion,Timestamp,CurrentJob,CurrentStep,NodeName,CPU(m),Memory(Mi)
+v1.30.9-eks-8cce635,2025-02-01T06:59:18Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,91,1627.316
+v1.30.9-eks-8cce635,2025-02-01T06:59:20Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,91,1627.316
+v1.30.9-eks-8cce635,2025-02-01T06:59:22Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,91,1627.316
+v1.30.9-eks-8cce635,2025-02-01T06:59:24Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1507,1871.402
+v1.30.9-eks-8cce635,2025-02-01T06:59:26Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1507,1871.402
+v1.30.9-eks-8cce635,2025-02-01T06:59:28Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1507,1871.402
+v1.30.9-eks-8cce635,2025-02-01T06:59:30Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1507,1871.402
+v1.30.9-eks-8cce635,2025-02-01T06:59:32Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1507,1871.402
+v1.30.9-eks-8cce635,2025-02-01T06:59:35Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1507,1871.402
+v1.30.9-eks-8cce635,2025-02-01T06:59:37Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1507,1871.402
+v1.30.9-eks-8cce635,2025-02-01T06:59:39Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1507,1871.402
+v1.30.9-eks-8cce635,2025-02-01T06:59:41Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1996,2363.684
+v1.30.9-eks-8cce635,2025-02-01T06:59:43Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1996,2363.684
+v1.30.9-eks-8cce635,2025-02-01T06:59:45Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1996,2363.684
+v1.30.9-eks-8cce635,2025-02-01T06:59:47Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1996,2363.684
+v1.30.9-eks-8cce635,2025-02-01T06:59:49Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1996,2363.684
+v1.30.9-eks-8cce635,2025-02-01T06:59:51Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1996,2363.684
+v1.30.9-eks-8cce635,2025-02-01T06:59:53Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1996,2363.684
+v1.30.9-eks-8cce635,2025-02-01T06:59:55Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3047.652
+v1.30.9-eks-8cce635,2025-02-01T06:59:57Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3047.652
+v1.30.9-eks-8cce635,2025-02-01T06:59:59Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3047.652
+v1.30.9-eks-8cce635,2025-02-01T07:00:01Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3047.652
+v1.30.9-eks-8cce635,2025-02-01T07:00:03Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3047.652
+v1.30.9-eks-8cce635,2025-02-01T07:00:05Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3047.652
+v1.30.9-eks-8cce635,2025-02-01T07:00:07Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3047.652
+v1.30.9-eks-8cce635,2025-02-01T07:00:09Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1990,3964.797
+v1.30.9-eks-8cce635,2025-02-01T07:00:11Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1990,3964.797
+v1.30.9-eks-8cce635,2025-02-01T07:00:13Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1990,3964.797
+v1.30.9-eks-8cce635,2025-02-01T07:00:16Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1990,3964.797
+v1.30.9-eks-8cce635,2025-02-01T07:00:18Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1990,3964.797
+v1.30.9-eks-8cce635,2025-02-01T07:00:20Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1990,3964.797
+v1.30.9-eks-8cce635,2025-02-01T07:00:22Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1990,3964.797
+v1.30.9-eks-8cce635,2025-02-01T07:00:24Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1990,3964.797
+v1.30.9-eks-8cce635,2025-02-01T07:00:26Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4047.820
+v1.30.9-eks-8cce635,2025-02-01T07:00:28Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4047.820
+v1.30.9-eks-8cce635,2025-02-01T07:00:30Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4047.820
+v1.30.9-eks-8cce635,2025-02-01T07:00:32Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4047.820
+v1.30.9-eks-8cce635,2025-02-01T07:00:34Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4047.820
+v1.30.9-eks-8cce635,2025-02-01T07:00:36Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4047.820
+v1.30.9-eks-8cce635,2025-02-01T07:00:38Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4047.820
+v1.30.9-eks-8cce635,2025-02-01T07:00:40Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4060.645
+v1.30.9-eks-8cce635,2025-02-01T07:00:42Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4060.645
+v1.30.9-eks-8cce635,2025-02-01T07:00:44Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4060.645
+v1.30.9-eks-8cce635,2025-02-01T07:00:46Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4060.645
+v1.30.9-eks-8cce635,2025-02-01T07:00:48Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4060.645
+v1.30.9-eks-8cce635,2025-02-01T07:00:50Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4060.645
+v1.30.9-eks-8cce635,2025-02-01T07:00:52Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4060.645
+v1.30.9-eks-8cce635,2025-02-01T07:00:55Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3902.938
+v1.30.9-eks-8cce635,2025-02-01T07:00:57Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3902.938
+v1.30.9-eks-8cce635,2025-02-01T07:00:59Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3902.938
+v1.30.9-eks-8cce635,2025-02-01T07:01:01Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3902.938
+v1.30.9-eks-8cce635,2025-02-01T07:01:03Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3902.938
+v1.30.9-eks-8cce635,2025-02-01T07:01:05Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3902.938
+v1.30.9-eks-8cce635,2025-02-01T07:01:07Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3902.938
+v1.30.9-eks-8cce635,2025-02-01T07:01:09Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3902.938
+v1.30.9-eks-8cce635,2025-02-01T07:01:11Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4008.137
+v1.30.9-eks-8cce635,2025-02-01T07:01:13Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4008.137
+v1.30.9-eks-8cce635,2025-02-01T07:01:15Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4008.137
+v1.30.9-eks-8cce635,2025-02-01T07:01:17Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4008.137
+v1.30.9-eks-8cce635,2025-02-01T07:01:19Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4008.137
+v1.30.9-eks-8cce635,2025-02-01T07:01:21Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4008.137
+v1.30.9-eks-8cce635,2025-02-01T07:01:23Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,4008.137
+v1.30.9-eks-8cce635,2025-02-01T07:01:25Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2469.062
+v1.30.9-eks-8cce635,2025-02-01T07:01:27Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2469.062
+v1.30.9-eks-8cce635,2025-02-01T07:01:29Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2469.062
+v1.30.9-eks-8cce635,2025-02-01T07:01:31Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2469.062
+v1.30.9-eks-8cce635,2025-02-01T07:01:34Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2469.062
+v1.30.9-eks-8cce635,2025-02-01T07:01:36Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2469.062
+v1.30.9-eks-8cce635,2025-02-01T07:01:38Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2469.062
+v1.30.9-eks-8cce635,2025-02-01T07:01:40Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,2612.230
+v1.30.9-eks-8cce635,2025-02-01T07:01:42Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,2612.230
+v1.30.9-eks-8cce635,2025-02-01T07:01:44Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,2612.230
+v1.30.9-eks-8cce635,2025-02-01T07:01:46Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,2612.230
+v1.30.9-eks-8cce635,2025-02-01T07:01:48Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,2612.230
+v1.30.9-eks-8cce635,2025-02-01T07:01:50Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,2612.230
+v1.30.9-eks-8cce635,2025-02-01T07:01:52Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,2612.230
+v1.30.9-eks-8cce635,2025-02-01T07:01:54Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2599.383
+v1.30.9-eks-8cce635,2025-02-01T07:01:56Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2599.383
+v1.30.9-eks-8cce635,2025-02-01T07:01:58Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2599.383
+v1.30.9-eks-8cce635,2025-02-01T07:02:00Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2599.383
+v1.30.9-eks-8cce635,2025-02-01T07:02:02Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2599.383
+v1.30.9-eks-8cce635,2025-02-01T07:02:04Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2599.383
+v1.30.9-eks-8cce635,2025-02-01T07:02:06Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2599.383
+v1.30.9-eks-8cce635,2025-02-01T07:02:08Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2599.383
+v1.30.9-eks-8cce635,2025-02-01T07:02:10Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1999,3422.809
+v1.30.9-eks-8cce635,2025-02-01T07:02:13Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1999,3422.809
+v1.30.9-eks-8cce635,2025-02-01T07:02:15Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1999,3422.809
+v1.30.9-eks-8cce635,2025-02-01T07:02:17Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1999,3422.809
+v1.30.9-eks-8cce635,2025-02-01T07:02:19Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1999,3422.809
+v1.30.9-eks-8cce635,2025-02-01T07:02:21Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1999,3422.809
+v1.30.9-eks-8cce635,2025-02-01T07:02:23Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1999,3422.809
+v1.30.9-eks-8cce635,2025-02-01T07:02:25Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3888.363
+v1.30.9-eks-8cce635,2025-02-01T07:02:27Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3888.363
+v1.30.9-eks-8cce635,2025-02-01T07:02:29Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3888.363
+v1.30.9-eks-8cce635,2025-02-01T07:02:31Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3888.363
+v1.30.9-eks-8cce635,2025-02-01T07:02:33Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3888.363
+v1.30.9-eks-8cce635,2025-02-01T07:02:35Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3888.363
+v1.30.9-eks-8cce635,2025-02-01T07:02:37Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3888.363
+v1.30.9-eks-8cce635,2025-02-01T07:02:39Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3879.629
+v1.30.9-eks-8cce635,2025-02-01T07:02:41Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3879.629
+v1.30.9-eks-8cce635,2025-02-01T07:02:43Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3879.629
+v1.30.9-eks-8cce635,2025-02-01T07:02:45Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3879.629
+v1.30.9-eks-8cce635,2025-02-01T07:02:47Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3879.629
+v1.30.9-eks-8cce635,2025-02-01T07:02:49Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3879.629
+v1.30.9-eks-8cce635,2025-02-01T07:02:52Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3879.629
+v1.30.9-eks-8cce635,2025-02-01T07:02:54Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3879.629
+v1.30.9-eks-8cce635,2025-02-01T07:02:56Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3737.441
+v1.30.9-eks-8cce635,2025-02-01T07:02:58Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3737.441
+v1.30.9-eks-8cce635,2025-02-01T07:03:00Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3737.441
+v1.30.9-eks-8cce635,2025-02-01T07:03:02Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3737.441
+v1.30.9-eks-8cce635,2025-02-01T07:03:04Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3737.441
+v1.30.9-eks-8cce635,2025-02-01T07:03:06Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3737.441
+v1.30.9-eks-8cce635,2025-02-01T07:03:08Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3737.441
+v1.30.9-eks-8cce635,2025-02-01T07:03:10Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3824.070
+v1.30.9-eks-8cce635,2025-02-01T07:03:12Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3824.070
+v1.30.9-eks-8cce635,2025-02-01T07:03:14Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3824.070
+v1.30.9-eks-8cce635,2025-02-01T07:03:16Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3824.070
+v1.30.9-eks-8cce635,2025-02-01T07:03:18Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3824.070
+v1.30.9-eks-8cce635,2025-02-01T07:03:20Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3824.070
+v1.30.9-eks-8cce635,2025-02-01T07:03:22Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3824.070
+v1.30.9-eks-8cce635,2025-02-01T07:03:24Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3827.215
+v1.30.9-eks-8cce635,2025-02-01T07:03:26Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3827.215
+v1.30.9-eks-8cce635,2025-02-01T07:03:28Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3827.215
+v1.30.9-eks-8cce635,2025-02-01T07:03:31Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3827.215
+v1.30.9-eks-8cce635,2025-02-01T07:03:33Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3827.215
+v1.30.9-eks-8cce635,2025-02-01T07:03:35Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3827.215
+v1.30.9-eks-8cce635,2025-02-01T07:03:37Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3827.215
+v1.30.9-eks-8cce635,2025-02-01T07:03:39Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,3827.215
+v1.30.9-eks-8cce635,2025-02-01T07:03:41Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3701.758
+v1.30.9-eks-8cce635,2025-02-01T07:03:43Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3701.758
+v1.30.9-eks-8cce635,2025-02-01T07:03:45Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3701.758
+v1.30.9-eks-8cce635,2025-02-01T07:03:47Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3701.758
+v1.30.9-eks-8cce635,2025-02-01T07:03:49Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3701.758
+v1.30.9-eks-8cce635,2025-02-01T07:03:51Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3701.758
+v1.30.9-eks-8cce635,2025-02-01T07:03:53Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,3701.758
+v1.30.9-eks-8cce635,2025-02-01T07:03:55Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2129.199
+v1.30.9-eks-8cce635,2025-02-01T07:03:57Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2129.199
+v1.30.9-eks-8cce635,2025-02-01T07:03:59Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2129.199
+v1.30.9-eks-8cce635,2025-02-01T07:04:01Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2129.199
+v1.30.9-eks-8cce635,2025-02-01T07:04:03Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2129.199
+v1.30.9-eks-8cce635,2025-02-01T07:04:05Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2129.199
+v1.30.9-eks-8cce635,2025-02-01T07:04:07Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2129.199
+v1.30.9-eks-8cce635,2025-02-01T07:04:10Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1924,2192.977
+v1.30.9-eks-8cce635,2025-02-01T07:04:12Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1924,2192.977
+v1.30.9-eks-8cce635,2025-02-01T07:04:14Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1924,2192.977
+v1.30.9-eks-8cce635,2025-02-01T07:04:16Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1924,2192.977
+v1.30.9-eks-8cce635,2025-02-01T07:04:18Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1924,2192.977
+v1.30.9-eks-8cce635,2025-02-01T07:04:20Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1924,2192.977
+v1.30.9-eks-8cce635,2025-02-01T07:04:22Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1924,2192.977
+v1.30.9-eks-8cce635,2025-02-01T07:04:24Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1924,2192.977
+v1.30.9-eks-8cce635,2025-02-01T07:04:26Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1913,2429.836
+v1.30.9-eks-8cce635,2025-02-01T07:04:28Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1913,2429.836
+v1.30.9-eks-8cce635,2025-02-01T07:04:30Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1913,2429.836
+v1.30.9-eks-8cce635,2025-02-01T07:04:32Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1913,2429.836
+v1.30.9-eks-8cce635,2025-02-01T07:04:34Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1913,2429.836
+v1.30.9-eks-8cce635,2025-02-01T07:04:36Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1913,2429.836
+v1.30.9-eks-8cce635,2025-02-01T07:04:38Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1913,2429.836
+v1.30.9-eks-8cce635,2025-02-01T07:04:40Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,2537.578
+v1.30.9-eks-8cce635,2025-02-01T07:04:42Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,2537.578
+v1.30.9-eks-8cce635,2025-02-01T07:04:45Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,2537.578
+v1.30.9-eks-8cce635,2025-02-01T07:04:47Z,file-operations,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2001,2537.578
+v1.30.9-eks-8cce635,2025-02-01T07:04:49Z,file-operations,Pre Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,2001,2537.578
+v1.30.9-eks-8cce635,2025-02-01T07:04:51Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,2001,2537.578
+v1.30.9-eks-8cce635,2025-02-01T07:04:53Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,2001,2537.578
+v1.30.9-eks-8cce635,2025-02-01T07:04:55Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,1995,2732.277
+v1.30.9-eks-8cce635,2025-02-01T07:04:57Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,1995,2732.277
+v1.30.9-eks-8cce635,2025-02-01T07:04:59Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,1995,2732.277
+v1.30.9-eks-8cce635,2025-02-01T07:05:01Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,1995,2732.277
+v1.30.9-eks-8cce635,2025-02-01T07:05:03Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,1995,2732.277
+v1.30.9-eks-8cce635,2025-02-01T07:05:05Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,1995,2732.277
+v1.30.9-eks-8cce635,2025-02-01T07:05:07Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,1995,2732.277
+v1.30.9-eks-8cce635,2025-02-01T07:05:09Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,2001,2572.711
+v1.30.9-eks-8cce635,2025-02-01T07:05:11Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,2001,2572.711
+v1.30.9-eks-8cce635,2025-02-01T07:05:13Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,2001,2572.711
+v1.30.9-eks-8cce635,2025-02-01T07:05:15Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,2001,2572.711
+v1.30.9-eks-8cce635,2025-02-01T07:05:17Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,2001,2572.711
+v1.30.9-eks-8cce635,2025-02-01T07:05:19Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,2001,2572.711
+v1.30.9-eks-8cce635,2025-02-01T07:05:21Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,2001,2572.711
+v1.30.9-eks-8cce635,2025-02-01T07:05:24Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,2001,2572.711
+v1.30.9-eks-8cce635,2025-02-01T07:05:26Z,file-operations,File Operations,ip-10-0-24-210.us-west-2.compute.internal,2000,2510.863
+v1.30.9-eks-8cce635,2025-02-01T07:05:28Z,file-operations,Complete runner,ip-10-0-24-210.us-west-2.compute.internal,2000,2510.863
+v1.30.9-eks-8cce635,2025-02-01T07:05:30Z,file-operations,Complete runner,ip-10-0-24-210.us-west-2.compute.internal,2000,2510.863
+v1.30.9-eks-8cce635,2025-02-01T07:05:32Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2510.863
+v1.30.9-eks-8cce635,2025-02-01T07:05:34Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2510.863
+v1.30.9-eks-8cce635,2025-02-01T07:05:36Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2510.863
+v1.30.9-eks-8cce635,2025-02-01T07:05:38Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,2000,2510.863
+v1.30.9-eks-8cce635,2025-02-01T07:05:40Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1991,2474.996
+v1.30.9-eks-8cce635,2025-02-01T07:05:42Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1991,2474.996
+v1.30.9-eks-8cce635,2025-02-01T07:05:44Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1991,2474.996
+v1.30.9-eks-8cce635,2025-02-01T07:05:46Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1991,2474.996
+v1.30.9-eks-8cce635,2025-02-01T07:05:48Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1991,2474.996
+v1.30.9-eks-8cce635,2025-02-01T07:05:50Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1991,2474.996
+v1.30.9-eks-8cce635,2025-02-01T07:05:52Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1991,2474.996
+v1.30.9-eks-8cce635,2025-02-01T07:05:54Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1642,2250.527
+v1.30.9-eks-8cce635,2025-02-01T07:05:56Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1642,2250.527
+v1.30.9-eks-8cce635,2025-02-01T07:05:58Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1642,2250.527
+v1.30.9-eks-8cce635,2025-02-01T07:06:00Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1642,2250.527
+v1.30.9-eks-8cce635,2025-02-01T07:06:03Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1642,2250.527
+v1.30.9-eks-8cce635,2025-02-01T07:06:05Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1642,2250.527
+v1.30.9-eks-8cce635,2025-02-01T07:06:07Z,docker-operation,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1642,2250.527
+v1.30.9-eks-8cce635,2025-02-01T07:06:09Z,cpu-stress,Set up runner,ip-10-0-24-210.us-west-2.compute.internal,1642,2250.527
+v1.30.9-eks-8cce635,2025-02-01T07:06:11Z,cpu-stress,Set up runner,ip-10-0-24-210.us-west-2.compute.internal,1964,2346.883
+v1.30.9-eks-8cce635,2025-02-01T07:06:13Z,docker-operation,Pre Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1964,2346.883
+v1.30.9-eks-8cce635,2025-02-01T07:06:15Z,cpu-stress,Pre Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1964,2346.883
+v1.30.9-eks-8cce635,2025-02-01T07:06:17Z,docker-operation,Check out repository,ip-10-0-24-210.us-west-2.compute.internal,1964,2346.883
+v1.30.9-eks-8cce635,2025-02-01T07:06:19Z,cpu-stress,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1964,2346.883
+v1.30.9-eks-8cce635,2025-02-01T07:06:21Z,cpu-stress,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1964,2346.883
+v1.30.9-eks-8cce635,2025-02-01T07:06:23Z,cpu-stress,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1964,2346.883
+v1.30.9-eks-8cce635,2025-02-01T07:06:25Z,cpu-stress,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1982,2481.723
+v1.30.9-eks-8cce635,2025-02-01T07:06:27Z,cpu-stress,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1982,2481.723
+v1.30.9-eks-8cce635,2025-02-01T07:06:29Z,cpu-stress,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1982,2481.723
+v1.30.9-eks-8cce635,2025-02-01T07:06:31Z,cpu-stress,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1982,2481.723
+v1.30.9-eks-8cce635,2025-02-01T07:06:33Z,cpu-stress,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1982,2481.723
+v1.30.9-eks-8cce635,2025-02-01T07:06:35Z,cpu-stress,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1982,2481.723
+v1.30.9-eks-8cce635,2025-02-01T07:06:37Z,cpu-stress,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1982,2481.723
+v1.30.9-eks-8cce635,2025-02-01T07:06:40Z,cpu-stress,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1990,2127.645
+v1.30.9-eks-8cce635,2025-02-01T07:06:42Z,cpu-stress,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1990,2127.645
+v1.30.9-eks-8cce635,2025-02-01T07:06:44Z,network-stress,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1990,2127.645
+v1.30.9-eks-8cce635,2025-02-01T07:06:46Z,network-stress,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1990,2127.645
+v1.30.9-eks-8cce635,2025-02-01T07:06:48Z,network-stress,Set up runner,ip-10-0-24-210.us-west-2.compute.internal,1990,2127.645
+v1.30.9-eks-8cce635,2025-02-01T07:06:50Z,setup-environment,Set up job,ip-10-0-24-210.us-west-2.compute.internal,1990,2127.645
+v1.30.9-eks-8cce635,2025-02-01T07:06:52Z,setup-environment,Pre Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1990,2127.645
+v1.30.9-eks-8cce635,2025-02-01T07:06:54Z,setup-environment,Check out repository,ip-10-0-24-210.us-west-2.compute.internal,1990,2127.645
+v1.30.9-eks-8cce635,2025-02-01T07:06:56Z,setup-environment,Check out repository,ip-10-0-24-210.us-west-2.compute.internal,2001,3260.410
+v1.30.9-eks-8cce635,2025-02-01T07:06:58Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,2001,3260.410
+v1.30.9-eks-8cce635,2025-02-01T07:07:00Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,2001,3260.410
+v1.30.9-eks-8cce635,2025-02-01T07:07:02Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,2001,3260.410
+v1.30.9-eks-8cce635,2025-02-01T07:07:04Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,2001,3260.410
+v1.30.9-eks-8cce635,2025-02-01T07:07:06Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,2001,3260.410
+v1.30.9-eks-8cce635,2025-02-01T07:07:08Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,2001,3260.410
+v1.30.9-eks-8cce635,2025-02-01T07:07:10Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,1998,3836.867
+v1.30.9-eks-8cce635,2025-02-01T07:07:12Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,1998,3836.867
+v1.30.9-eks-8cce635,2025-02-01T07:07:14Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,1998,3836.867
+v1.30.9-eks-8cce635,2025-02-01T07:07:17Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,1998,3836.867
+v1.30.9-eks-8cce635,2025-02-01T07:07:19Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,1998,3836.867
+v1.30.9-eks-8cce635,2025-02-01T07:07:21Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,1998,3836.867
+v1.30.9-eks-8cce635,2025-02-01T07:07:23Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,1998,3836.867
+v1.30.9-eks-8cce635,2025-02-01T07:07:25Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,2001,3750.324
+v1.30.9-eks-8cce635,2025-02-01T07:07:27Z,setup-environment,Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,2001,3750.324
+v1.30.9-eks-8cce635,2025-02-01T07:07:29Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,2001,3750.324
+v1.30.9-eks-8cce635,2025-02-01T07:07:31Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,2001,3750.324
+v1.30.9-eks-8cce635,2025-02-01T07:07:33Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,2001,3750.324
+v1.30.9-eks-8cce635,2025-02-01T07:07:35Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,2001,3750.324
+v1.30.9-eks-8cce635,2025-02-01T07:07:37Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,2001,3750.324
+v1.30.9-eks-8cce635,2025-02-01T07:07:39Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1999,3763.918
+v1.30.9-eks-8cce635,2025-02-01T07:07:41Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1999,3763.918
+v1.30.9-eks-8cce635,2025-02-01T07:07:43Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1999,3763.918
+v1.30.9-eks-8cce635,2025-02-01T07:07:45Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1999,3763.918
+v1.30.9-eks-8cce635,2025-02-01T07:07:47Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1999,3763.918
+v1.30.9-eks-8cce635,2025-02-01T07:07:49Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1999,3763.918
+v1.30.9-eks-8cce635,2025-02-01T07:07:51Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1999,3763.918
+v1.30.9-eks-8cce635,2025-02-01T07:07:53Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1999,3763.918
+v1.30.9-eks-8cce635,2025-02-01T07:07:56Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1998,3857.672
+v1.30.9-eks-8cce635,2025-02-01T07:07:58Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1998,3857.672
+v1.30.9-eks-8cce635,2025-02-01T07:08:00Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1998,3857.672
+v1.30.9-eks-8cce635,2025-02-01T07:08:02Z,network-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1998,3857.672
+v1.30.9-eks-8cce635,2025-02-01T07:08:04Z,cpu-stress,CPU Stress,ip-10-0-24-210.us-west-2.compute.internal,1998,3857.672
+v1.30.9-eks-8cce635,2025-02-01T07:08:06Z,cpu-stress,CPU Stress,ip-10-0-24-210.us-west-2.compute.internal,1998,3857.672
+v1.30.9-eks-8cce635,2025-02-01T07:08:08Z,cpu-stress,Print large amount of text,ip-10-0-24-210.us-west-2.compute.internal,1998,3857.672
+v1.30.9-eks-8cce635,2025-02-01T07:08:10Z,cpu-stress,Print large amount of text,ip-10-0-24-210.us-west-2.compute.internal,2000,3845.309
+v1.30.9-eks-8cce635,2025-02-01T07:08:12Z,cpu-stress,Print large amount of text,ip-10-0-24-210.us-west-2.compute.internal,2000,3845.309
+v1.30.9-eks-8cce635,2025-02-01T07:08:14Z,cpu-stress,Print large amount of text,ip-10-0-24-210.us-west-2.compute.internal,2000,3845.309
+v1.30.9-eks-8cce635,2025-02-01T07:08:16Z,cpu-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,2000,3845.309
+v1.30.9-eks-8cce635,2025-02-01T07:08:18Z,cpu-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,2000,3845.309
+v1.30.9-eks-8cce635,2025-02-01T07:08:20Z,cpu-stress,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,2000,3845.309
+v1.30.9-eks-8cce635,2025-02-01T07:08:22Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,2000,3845.309
+v1.30.9-eks-8cce635,2025-02-01T07:08:24Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1994,2035.410
+v1.30.9-eks-8cce635,2025-02-01T07:08:26Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1994,2035.410
+v1.30.9-eks-8cce635,2025-02-01T07:08:28Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1994,2035.410
+v1.30.9-eks-8cce635,2025-02-01T07:08:30Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1994,2035.410
+v1.30.9-eks-8cce635,2025-02-01T07:08:33Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1994,2035.410
+v1.30.9-eks-8cce635,2025-02-01T07:08:35Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1994,2035.410
+v1.30.9-eks-8cce635,2025-02-01T07:08:37Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1994,2035.410
+v1.30.9-eks-8cce635,2025-02-01T07:08:39Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1994,2035.410
+v1.30.9-eks-8cce635,2025-02-01T07:08:41Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1787,2109.832
+v1.30.9-eks-8cce635,2025-02-01T07:08:43Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1787,2109.832
+v1.30.9-eks-8cce635,2025-02-01T07:08:45Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1787,2109.832
+v1.30.9-eks-8cce635,2025-02-01T07:08:47Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1787,2109.832
+v1.30.9-eks-8cce635,2025-02-01T07:08:49Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1787,2109.832
+v1.30.9-eks-8cce635,2025-02-01T07:08:51Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1787,2109.832
+v1.30.9-eks-8cce635,2025-02-01T07:08:53Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1787,2109.832
+v1.30.9-eks-8cce635,2025-02-01T07:08:55Z,setup-environment,Install Node and Python Dependencies,ip-10-0-24-210.us-west-2.compute.internal,1893,1841.801
+v1.30.9-eks-8cce635,2025-02-01T07:08:57Z,setup-environment,Post Set up Node and Python,ip-10-0-24-210.us-west-2.compute.internal,1893,1841.801
+v1.30.9-eks-8cce635,2025-02-01T07:08:59Z,setup-environment,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1893,1841.801
+v1.30.9-eks-8cce635,2025-02-01T07:09:01Z,setup-environment,Post Harden Runner,ip-10-0-24-210.us-west-2.compute.internal,1893,1841.801
+v1.30.9-eks-8cce635,2025-02-01T07:09:03Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1893,1841.801
+v1.30.9-eks-8cce635,2025-02-01T07:09:05Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1893,1841.801
+v1.30.9-eks-8cce635,2025-02-01T07:09:07Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1893,1841.801
+v1.30.9-eks-8cce635,2025-02-01T07:09:09Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1861,1909.453
+v1.30.9-eks-8cce635,2025-02-01T07:09:11Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1861,1909.453
+v1.30.9-eks-8cce635,2025-02-01T07:09:14Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1861,1909.453
+v1.30.9-eks-8cce635,2025-02-01T07:09:16Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1861,1909.453
+v1.30.9-eks-8cce635,2025-02-01T07:09:18Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1861,1909.453
+v1.30.9-eks-8cce635,2025-02-01T07:09:20Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1861,1909.453
+v1.30.9-eks-8cce635,2025-02-01T07:09:22Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1861,1909.453
+v1.30.9-eks-8cce635,2025-02-01T07:09:24Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1861,1909.453
+v1.30.9-eks-8cce635,2025-02-01T07:09:26Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1129,1859.191
+v1.30.9-eks-8cce635,2025-02-01T07:09:28Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1129,1859.191
+v1.30.9-eks-8cce635,2025-02-01T07:09:30Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1129,1859.191
+v1.30.9-eks-8cce635,2025-02-01T07:09:32Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1129,1859.191
+v1.30.9-eks-8cce635,2025-02-01T07:09:34Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1129,1859.191
+v1.30.9-eks-8cce635,2025-02-01T07:09:36Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1129,1859.191
+v1.30.9-eks-8cce635,2025-02-01T07:09:38Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1129,1859.191
+v1.30.9-eks-8cce635,2025-02-01T07:09:40Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,766,1772.402
+v1.30.9-eks-8cce635,2025-02-01T07:09:42Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,766,1772.402
+v1.30.9-eks-8cce635,2025-02-01T07:09:44Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,766,1772.402
+v1.30.9-eks-8cce635,2025-02-01T07:09:46Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,766,1772.402
+v1.30.9-eks-8cce635,2025-02-01T07:09:48Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,766,1772.402
+v1.30.9-eks-8cce635,2025-02-01T07:09:50Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,766,1772.402
+v1.30.9-eks-8cce635,2025-02-01T07:09:53Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,766,1772.402
+v1.30.9-eks-8cce635,2025-02-01T07:09:55Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,533,1941.992
+v1.30.9-eks-8cce635,2025-02-01T07:09:57Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,533,1941.992
+v1.30.9-eks-8cce635,2025-02-01T07:09:59Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,533,1941.992
+v1.30.9-eks-8cce635,2025-02-01T07:10:01Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,533,1941.992
+v1.30.9-eks-8cce635,2025-02-01T07:10:03Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,533,1941.992
+v1.30.9-eks-8cce635,2025-02-01T07:10:05Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,533,1941.992
+v1.30.9-eks-8cce635,2025-02-01T07:10:07Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,533,1941.992
+v1.30.9-eks-8cce635,2025-02-01T07:10:09Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,533,1941.992
+v1.30.9-eks-8cce635,2025-02-01T07:10:11Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1406,1881.254
+v1.30.9-eks-8cce635,2025-02-01T07:10:13Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1406,1881.254
+v1.30.9-eks-8cce635,2025-02-01T07:10:15Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1406,1881.254
+v1.30.9-eks-8cce635,2025-02-01T07:10:17Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1406,1881.254
+v1.30.9-eks-8cce635,2025-02-01T07:10:19Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1406,1881.254
+v1.30.9-eks-8cce635,2025-02-01T07:10:21Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1406,1881.254
+v1.30.9-eks-8cce635,2025-02-01T07:10:23Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1406,1881.254
+v1.30.9-eks-8cce635,2025-02-01T07:10:25Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1110,1733.355
+v1.30.9-eks-8cce635,2025-02-01T07:10:27Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1110,1733.355
+v1.30.9-eks-8cce635,2025-02-01T07:10:29Z,docker-operation,Docker Build,ip-10-0-24-210.us-west-2.compute.internal,1110,1733.355
+v1.30.9-eks-8cce635,2025-02-01T07:10:31Z,docker-operation,Docker Run,ip-10-0-24-210.us-west-2.compute.internal,1110,1733.355
+v1.30.9-eks-8cce635,2025-02-01T07:10:34Z,docker-operation,Complete runner,ip-10-0-24-210.us-west-2.compute.internal,1110,1733.355
+v1.30.9-eks-8cce635,2025-02-01T07:10:36Z,docker-operation,Complete runner,ip-10-0-24-210.us-west-2.compute.internal,1110,1733.355
+v1.30.9-eks-8cce635,2025-02-01T07:10:38Z,NA,NA,ip-10-0-24-210.us-west-2.compute.internal,1110,1733.355
+v1.30.9-eks-8cce635,2025-02-01T07:10:40Z,NA,NA,ip-10-0-24-210.us-west-2.compute.internal,854,1721.453

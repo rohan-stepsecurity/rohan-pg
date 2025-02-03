@@ -1,0 +1,14 @@
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: no-harden-runner
+  namespace: arc-runners
+  labels:
+    app.kubernetes.io/instance: hardenrunner
+spec:
+  replicas: 5
+  template:
+    spec:
+      labels:
+        - no-harden-runner
+      repository: harden-runner-canary/arc-tracer-benchmark

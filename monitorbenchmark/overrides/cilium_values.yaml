@@ -1,0 +1,20 @@
+cni:
+  chainingMode: aws-cni
+  exclusive: false
+
+extraArgs:
+  - --tofqdns-dns-reject-response-code=nameError
+
+enableIPv4Masquerade: false
+
+tunnel: disabled
+
+endpointRoutes:
+  enabled: true
+
+hubble:
+  relay:
+    enabled: false
+  ui:
+    enabled: false
+  enabled: true
