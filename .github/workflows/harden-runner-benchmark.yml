@@ -57,4 +57,14 @@ jobs:
           IS_REPORT : "true"
         run: |
           IS_REPORT=true make report
+      
+
+      - name: Display structure of downloaded files
+        run: ls -R 
+      
+
+      - name: Step Summary
+        working-directory: ./monitorbenchmark
+        run: |
+          cat REPORT.md >> $GITHUB_STEP_SUMMARY
            
