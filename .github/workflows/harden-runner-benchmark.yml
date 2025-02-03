@@ -18,13 +18,6 @@ jobs:
 
   benchmark:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        config:
-          - { runner: "no-harden-runner", cluster: "no-harden-runner-bench" }
-          #- { runner: "current-harden-runner", cluster: "harden-runner-bench" }
-          #- { runner: "tracer-harden-runner", cluster: "tracer-runner-bench" }
-        iteration: ["1","2","3"]
     steps:
 
       - name: Check out repository
@@ -40,6 +33,7 @@ jobs:
 
 
   gather-artifacts:
+    needs: benchmark
     runs-on: ubuntu-latest
     steps:
     
