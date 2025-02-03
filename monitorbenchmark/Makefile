@@ -50,4 +50,4 @@ report: build
 		--output-dir $(OUTPUT_DIR) \
 		--metrics-interval $(METRICS_INTERVAL) \
 		--cooldown $(COOLDOWN) \
-		--is-report $(IS_REPORT)
+		--is-report true
