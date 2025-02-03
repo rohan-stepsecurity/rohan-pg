@@ -26,7 +26,7 @@ func ParseFlags() *CLIOptions {
 	flag.StringVar(&opts.OutputDir, "output-dir", "./metrics", "Output directory")
 	flag.DurationVar(&opts.MetricsInterval, "metrics-interval", 2*time.Second, "Metrics collection interval")
 	flag.DurationVar(&opts.Cooldown, "cooldown", 30*time.Second, "Cooldown period after workflow completion")
-	flag.BoolVar(&opts.IsReport, "is-report", false, "To generate report or not")
+	flag.BoolVar(&opts.IsReport, "is-report", true, "To generate report or not")
 
 	flag.Usage = func() {
 		fmt.Fprintf(flag.CommandLine.Output(), "Usage: %s [options]\n", os.Args[0])
