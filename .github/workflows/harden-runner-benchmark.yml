@@ -53,7 +53,6 @@ jobs:
           RUNNER_LABEL: ${{ matrix.config.runner }}
           USE_HARDEN_RUNNER: "true"
           GITHUB_TOKEN: ${{ secrets.AUTHORIZED_GITHUB_PAT }}
-          KUBE_TOKEN: ${{ env.KUBE_TOKEN }}
           IS_REPORT : "true"
         run: |
           IS_REPORT=true make report

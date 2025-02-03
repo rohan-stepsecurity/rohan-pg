@@ -26,7 +26,7 @@ func ParseFlags() *CLIOptions {
 	flag.StringVar(&opts.OutputDir, "output-dir", "./metrics", "Output directory")
 	flag.DurationVar(&opts.MetricsInterval, "metrics-interval", 2*time.Second, "Metrics collection interval")
 	flag.DurationVar(&opts.Cooldown, "cooldown", 30*time.Second, "Cooldown period after workflow completion")
-	flag.BoolVar(&opts.IsReport, "is-report", true, "To generate report or not")
+	flag.BoolVar(&opts.IsReport, "is-report", false, "To generate report or not")
 
 	flag.Usage = func() {
 		fmt.Fprintf(flag.CommandLine.Output(), "Usage: %s [options]\n", os.Args[0])
@@ -35,6 +35,8 @@ func ParseFlags() *CLIOptions {
 	}
 
 	flag.Parse()
+
+	fmt.Println(opts)
 
 	return &opts
 }
@@ -54,6 +56,9 @@ func CLIOptionsToConfig(opts *CLIOptions) *Config {
 }
 
 func ValidateConfig(cfg *Config) error {
+	if cfg.IsReport {
+		return nil
+	}
 	if cfg.WorkflowFile == "" {
 		return fmt.Errorf("workflow-file is required")
 	}
