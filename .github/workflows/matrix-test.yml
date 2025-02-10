@@ -18,7 +18,7 @@ jobs:
         id: set-matrix
         run: |
           ITERATIONS=${{ inputs.iterations }}
-          MATRIX=$(seq 0 $((ITERATIONS)) | jq -c '[inputs | tonumber]')
+          MATRIX=$(seq 0 $((ITERATIONS)) | jq -c '[inputs | tostring]')
           echo "Generated matrix: $MATRIX"
           echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
 
