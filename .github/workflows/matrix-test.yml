@@ -2,19 +2,35 @@ name: Matrix Test
 
 on:
   workflow_dispatch:
+    inputs:
+      iterations:
+        description: 'Number of Iterations'
+        required: true
+        default: '10'
 
 jobs:
+  generate-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Generate Matrix JSON
+        id: set-matrix
+        run: |
+          ITERATIONS=${{ inputs.iterations }}
+          MATRIX=$(seq 1 $((ITERATIONS)) | jq -c -R '[split("\n")[:-1] | map(tonumber)]')
+          echo "Generated matrix: $MATRIX"
+          echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
+    
   create:
     runs-on: ubuntu-latest
     strategy:
       matrix: 
-        config: [no-harden-runner-bench, harden-runner-bench, tracer-runner-bench]
+        config: ${{ fromJson(needs.generate-matrix.outputs.matrix) }}
     steps:
     - name: Say Hello
       run: |
-          sleep 5
           echo "Hello from ${{matrix.config}}"
-          sleep 5
 
   benchmark:
     needs: [create]
