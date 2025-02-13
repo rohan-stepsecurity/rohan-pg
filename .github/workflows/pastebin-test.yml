@@ -25,6 +25,8 @@ jobs:
             registry.npmjs.org:443
             www.stepsecurity.io:443
             objects.githubusercontent.com:443
+            archive.ubuntu.com:443
+            security.ubuntu.com:443
       
       - name: Checkout
         uses: actions/checkout@v3
