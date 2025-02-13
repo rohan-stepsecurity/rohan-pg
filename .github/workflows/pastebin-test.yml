@@ -5,7 +5,7 @@ on:
 jobs:
   publish:
     name: Build Docker Image
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
