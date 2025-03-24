@@ -7,6 +7,10 @@ on:
         description: 'Number of Iterations'
         required: true
         default: '10'
+      ARCHardenRunnerReleaseBranchVersion:
+        description: 'Arc harden Runner Release Branch Version'
+        required: true
+        default: 'int:latest'
 
 jobs:
   generate-matrix:
@@ -17,6 +21,8 @@ jobs:
       - name: Generate Matrix JSON
         id: set-matrix
         run: |
+          echo ${{ split(inputs.ARCHardenRunnerReleaseBranchVersion, ':')[0] }}
+          echo ${{ split(inputs.ARCHardenRunnerReleaseBranchVersion, ':')[1] }}
           ITERATIONS=${{ inputs.iterations }}
           MATRIX=$(seq 0 $((ITERATIONS)) | jq -c '[inputs | tostring]')
           echo "Generated matrix: $MATRIX"
