@@ -1,0 +1,30 @@
+version: 2
+project_name: myapp
+
+source:
+  enabled: false
+
+release:
+  github:
+    owner: rohan-stepsecurity         # GitHub owner of the public repository (target repo)
+    name: rohan-pg    
+  
+builds:
+  - binary: myapp
+    main: .
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+
+archives:
+  - formats: [binary]
+
+checksum:
+  name_template: "checksums.txt"
+
+changelog:
+  use: git
