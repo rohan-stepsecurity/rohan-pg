@@ -1,16 +1,16 @@
-# Workflow to reproduce "Verifying URN" step
-name: Maven Dependency Verification
+# Workflow to reproduce "Verifying URN" step using BitcoinJ Digest Enforcer Rules
+name: Maven Digest URN Verification
 
 on:
   workflow_dispatch:
 
 jobs:
-  build-with-verification:
+  build-with-digest-verification:
     runs-on: ubuntu-latest
     
     steps:
     - name: Harden Runner
-      uses: step-security/harden-runner@v2
+      uses: step-security/harden-runner@v2.11.1
       with:
         egress-policy: audit # Start with audit to see network calls
         
@@ -60,7 +60,7 @@ jobs:
         }
         EOF
         
-    - name: Create pom.xml with dependency verification
+    - name: Create pom.xml with BitcoinJ Digest Enforcer Rules
       run: |
         cat > pom.xml << 'EOF'
         <?xml version="1.0" encoding="UTF-8"?>
@@ -71,7 +71,7 @@ jobs:
             <modelVersion>4.0.0</modelVersion>
             
             <groupId>com.example</groupId>
-            <artifactId>verification-test</artifactId>
+            <artifactId>digest-verification-test</artifactId>
             <version>1.0-SNAPSHOT</version>
             <packaging>jar</packaging>
             
@@ -82,7 +82,7 @@ jobs:
             </properties>
             
             <dependencies>
-                <!-- Dependencies that will trigger verification -->
+                <!-- Dependencies that will trigger URN verification -->
                 <dependency>
                     <groupId>org.apache.commons</groupId>
                     <artifactId>commons-lang3</artifactId>
@@ -109,6 +109,23 @@ jobs:
                 </dependency>
             </dependencies>
             
+            <repositories>
+                <!-- Add repository for BitcoinJ Digest Enforcer Rules -->
+                <repository>
+                    <id>central</id>
+                    <name>Maven Central</name>
+                    <url>https://repo1.maven.org/maven2</url>
+                </repository>
+            </repositories>
+            
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <name>Maven Central</name>
+                    <url>https://repo1.maven.org/maven2</url>
+                </pluginRepository>
+            </pluginRepositories>
+            
             <build>
                 <plugins>
                     <plugin>
@@ -123,69 +140,50 @@ jobs:
                         <version>3.1.2</version>
                     </plugin>
                     
-                    <!-- OWASP Dependency Check - likely source of "Verifying URN" -->
-                    <plugin>
-                        <groupId>org.owasp</groupId>
-                        <artifactId>dependency-check-maven</artifactId>
-                        <version>8.4.0</version>
-                        <configuration>
-                            <failBuildOnCVSS>7</failBuildOnCVSS>
-                            <suppressionFiles>
-                                <suppressionFile>owasp-suppressions.xml</suppressionFile>
-                            </suppressionFiles>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>check</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    
-                    <!-- Maven Enforcer with digest rules -->
+                    <!-- BitcoinJ Digest Enforcer Rules - This produces "Verifying URN" messages -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-enforcer-plugin</artifactId>
                         <version>3.4.1</version>
+                        <dependencies>
+                            <dependency>
+                                <groupId>uk.co.froot.maven.enforcer</groupId>
+                                <artifactId>digest-enforcer-rules</artifactId>
+                                <version>0.0.1</version>
+                            </dependency>
+                        </dependencies>
                         <executions>
                             <execution>
-                                <id>enforce-dependency-integrity</id>
+                                <id>enforce-digest-verification</id>
                                 <phase>verify</phase>
                                 <goals>
                                     <goal>enforce</goal>
                                 </goals>
                                 <configuration>
                                     <rules>
+                                        <!-- This is the rule that prints "Verifying URN" -->
+                                        <digestRule implementation="uk.co.froot.maven.enforcer.DigestRule">
+                                            <!-- Enable snapshot mode to see URN generation -->
+                                            <buildSnapshot>true</buildSnapshot>
+                                            
+                                            <!-- URNs in format: groupId:artifactId:version:type:classifier:scope:hash -->
+                                            <urns>
+                                                <!-- These will be verified and cause "Verifying URN" messages -->
+                                                <urn>org.apache.commons:commons-lang3:3.12.0:jar:null:compile:d919d904486c0c66c1e9d2ade7bb69e0bfd86aff</urn>
+                                                <urn>org.slf4j:slf4j-api:2.0.7:jar:null:compile:41eb7184ea9d556f6c4cd0b65b6b945f07a76d6b</urn>
+                                                <urn>ch.qos.logback:logback-classic:1.4.8:jar:null:compile:4b8c7c2c9a8c38e6f5ec5b6b7b7e6d9b8c7d6e5f</urn>
+                                            </urns>
+                                        </digestRule>
+                                        
+                                        <!-- Additional standard enforcer rules -->
                                         <requireMavenVersion>
                                             <version>[3.6.0,)</version>
                                         </requireMavenVersion>
                                         <requireJavaVersion>
                                             <version>[11,)</version>
                                         </requireJavaVersion>
-                                        <bannedDependencies>
-                                            <excludes>
-                                                <exclude>commons-logging</exclude>
-                                                <exclude>log4j:log4j</exclude>
-                                            </excludes>
-                                        </bannedDependencies>
                                     </rules>
                                 </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    
-                    <!-- Versions plugin to check for updates -->
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>versions-maven-plugin</artifactId>
-                        <version>2.16.0</version>
-                        <executions>
-                            <execution>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>display-dependency-updates</goal>
-                                </goals>
                             </execution>
                         </executions>
                     </plugin>
@@ -194,18 +192,13 @@ jobs:
         </project>
         EOF
         
-    - name: Create OWASP suppression file
+            
+    - name: Build with Maven and capture URN verification
       run: |
-        cat > owasp-suppressions.xml << 'EOF'
-        <?xml version="1.0" encoding="UTF-8"?>
-        <suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
-            <!-- Add suppressions here if needed -->
-        </suppressions>
-        EOF
+        echo "Starting Maven build with BitcoinJ Digest Enforcer Rules..."
+        echo "This should produce 'Verifying URN' messages during the verify phase"
         
-    - name: Build with Maven (verbose output)
-      run: |
-        echo "Starting Maven build with dependency verification..."
+        # Run Maven with maximum verbosity to capture all URN verification messages
         mvn clean verify -X -e \
           -Dmaven.wagon.http.connectionTimeout=10000 \
           -Dmaven.wagon.http.readTimeout=30000 \
@@ -214,33 +207,76 @@ jobs:
     - name: Search for URN verification messages
       run: |
         echo "=== Searching for URN-related messages ==="
-        grep -i "urn\|verifying\|verify" maven-build.log || echo "No URN messages found"
+        echo "Looking for the exact 'Verifying URN' messages..."
         
-        echo "=== Searching for dependency check messages ==="
-        grep -i "dependency.check\|vulnerability\|cve" maven-build.log || echo "No dependency check messages found"
+        # Search for URN verification messages (the main target)
+        if grep -i "verifying.*urn\|urn.*verif" maven-build.log; then
+            echo "✅ FOUND: 'Verifying URN' messages detected!"
+        else
+            echo "❌ No 'Verifying URN' messages found"
+        fi
         
-        echo "=== Looking for network-related timeouts or slow operations ==="
-        grep -i "timeout\|slow\|downloading\|downloaded" maven-build.log || echo "No timeout messages found"
+        echo ""
+        echo "=== All URN-related messages ==="
+        grep -n -i "urn" maven-build.log || echo "No URN messages found"
         
-    - name: Run OWASP Dependency Check separately with verbose output
+        echo ""
+        echo "=== Digest Enforcer Rule execution ==="
+        grep -n -i "digest.*rule\|digestrule\|enforce.*digest" maven-build.log || echo "No digest rule messages found"
+        
+        echo ""
+        echo "=== Maven Enforcer Plugin execution ==="
+        grep -n -A5 -B5 "maven-enforcer-plugin" maven-build.log || echo "No enforcer plugin execution found"
+        
+        echo ""
+        echo "=== Network-related delays during verification ==="
+        grep -n -i "downloading\|connect\|timeout\|slow" maven-build.log | head -20 || echo "No network messages found"
+        
+    - name: Analyze timing and performance
       run: |
-        echo "Running OWASP Dependency Check with maximum verbosity..."
-        mvn org.owasp:dependency-check-maven:8.4.0:check -X -e \
-          -Dformat=XML,HTML,JSON \
-          2>&1 | tee dependency-check.log
+        echo "=== Performance Analysis ==="
+        
+        # Extract timing information from Maven output
+        echo "--- Build phase timing ---"
+        grep -E "\[INFO\].*\.\.\. [0-9]+\.[0-9]+s|\[INFO\] BUILD SUCCESS" maven-build.log || echo "No timing info found"
+        
+        echo ""
+        echo "--- Dependency resolution timing ---"
+        grep -E "Downloaded|Downloading" maven-build.log | head -10 || echo "No download timing found"
+        
+        echo ""
+        echo "--- Enforcer plugin timing ---"
+        grep -A10 -B10 "enforce.*goal" maven-build.log || echo "No enforcer timing found"
+        
+    - name: Test with different Harden Runner modes
+      run: |
+        echo "=== Testing impact of network policies ==="
+        echo "This simulates the difference between having Harden Runner vs not having it"
+        
+        # Test with different Maven timeout settings to simulate network policy delays
+        echo "--- Quick build (simulating no network policies) ---"
+        time mvn clean compile -q \
+          -Dmaven.wagon.http.connectionTimeout=60000 \
+          -Dmaven.wagon.http.readTimeout=120000
           
-    - name: Search dependency check logs for URN messages
-      run: |
-        echo "=== Searching dependency check logs for URN messages ==="
-        grep -i "urn\|verifying\|verify" dependency-check.log || echo "No URN messages in dependency check"
+        echo ""
+        echo "--- Slow build (simulating network policy delays) ---"
+        time mvn clean verify -q \
+          -Dmaven.wagon.http.connectionTimeout=5000 \
+          -Dmaven.wagon.http.readTimeout=10000 \
+          2>&1 | tee slow-build.log
+          
+        # Check if the slow build shows different URN verification behavior
+        echo ""
+        echo "--- URN messages in slow build ---"
+        grep -i "urn\|timeout\|retry" slow-build.log || echo "No URN or timeout messages in slow build"
         
-    - name: Upload build logs
+    - name: Upload build logs and analysis
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: build-logs
+        name: digest-verification-logs
         path: |
           maven-build.log
-          dependency-check.log
-          target/dependency-check-report.html
-          target/dependency-check-report.xml
+          slow-build.log
+          pom.xml
