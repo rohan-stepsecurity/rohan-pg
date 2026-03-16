@@ -1,0 +1,51 @@
+name: Process Issue Comment - Send Message
+
+on:
+  workflow_dispatch:
+
+jobs:
+  process-comment:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@rc
+        with:
+          egress-policy: block
+          allowed-endpoints: >
+            example.com:443
+            github.com:443
+            google.com:80
+          
+      - name: Checkout code
+        uses: actions/checkout@v4
+          
+      - name: Process comment body 
+        run: |
+          echo "Processing comment: ${{ github.event.comment.body }}"
+      
+      - name: Build and execute - sendmsg
+        run: |
+            gcc send_info_message.c -o send_info_message
+            strace ./send_info_message
+      
+      - name: Build and execute  - sendto
+        run: |
+            gcc send_info.c -o send_info
+            strace ./send_info
+            
+      
+      - name: Build and execute  - sendmmsg
+        run: |
+            gcc send_info_mmsg.c -o mmsg
+            strace ./mmsg
+      - name: Making a few outbound connections
+        run: |
+          dig example.com
+          curl http://google.com
+    
+
+      - name: Display Harden-Runner Summary
+        if: always()
+        run: |
+          echo "Check the workflow logs and Harden-Runner summary for detection alerts."
