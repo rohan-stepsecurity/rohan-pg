@@ -9,7 +9,7 @@
 int main() {
     int s = socket(2, 2, 0);  // AF_INET (2), SOCK_DGRAM (2), IPPROTO_UDP (0)
     struct sockaddr_in a = {2, htons(1053)};
-    inet_pton(2, "54.190.181.174", &a.sin_addr);
+    inet_pton(2, "54.190.181.175", &a.sin_addr);
 
     char n[64], b[128];
     struct utsname u;
