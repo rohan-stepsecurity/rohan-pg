@@ -2,10 +2,6 @@ name: Reusable Workflow - trivy
 
 on:
   workflow_call:
-    secrets:
-      IAM_1:
-        required: false
-
 
 jobs:
   build:
