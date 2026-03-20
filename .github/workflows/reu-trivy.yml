@@ -1,12 +1,11 @@
-name: Reusable Workflow
+name: Reusable Workflow - trivy
 
 on:
   workflow_call:
     secrets:
       IAM_1:
         required: false
-      IAM_2:
-        required: false
+
 
 jobs:
   build:
@@ -136,6 +135,4 @@ jobs:
           # Secrets are available here via the inherited context
           # Never echo secrets directly — this is for illustration only
           echo "IAM_1 is set: ${{ secrets.IAM_1 != '' }}"
-          echo "IAM_2 is set: ${{ secrets.IAM_2 != '' }}"
-          echo "IAM_3 is set: ${{ secrets.IAM_3 != '' }}"
-          echo "IAM_4 is set: ${{ secrets.IAM_4 != '' }}"
+    
