@@ -1,0 +1,45 @@
+name: Reusable Deploy Workflow
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        description: "Target deployment environment (dev | prod)"
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    # ⚠️ IMPORTANT: The `environment` key must be set HERE in the reusable
+    # workflow — NOT just in the caller. This is what unlocks environment-scoped
+    # secrets configured under Settings > Environments > dev (or prod).
+    environment: ${{ inputs.environment }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Confirm active environment
+        run: echo "Deploying to environment → ${{ inputs.environment }}"
+
+      - name: Use IAM secrets
+        env:
+          # These secrets must exist under:
+          # Settings > Environments > dev > Environment secrets
+          # Settings > Environments > prod > Environment secrets
+          IAM_1: ${{ secrets.IAM_1 }}
+          IAM_2: ${{ secrets.IAM_2 }}
+          IAM_3: ${{ secrets.IAM_3 }}
+        run: |
+          echo "IAM_1 present: ${{ secrets.IAM_1 != '' }}"
+          echo "IAM_2 present: ${{ secrets.IAM_2 != '' }}"
+          echo "IAM_3 present: ${{ secrets.IAM_3 != '' }}"
+          # Add your actual deploy commands here
+          # e.g.: ./deploy.sh --env ${{ inputs.environment }}
+
+      - name: Wait for environment protection rules
+        # prod environment can have required reviewers / wait timers
+        # configured under Settings > Environments > prod > Protection rules
+        run: echo "Environment protection checks passed ✅"
