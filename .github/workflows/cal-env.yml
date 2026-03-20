@@ -20,7 +20,7 @@ jobs:
   # ---------------------------------------------------
   deploy-prod:
     needs: deploy-dev
-    uses: ./.github/workflows/reusable-deploy.yml
+    uses: ./.github/workflows/reu-env.yml
     secrets: inherit
     with:
       environment: prod
