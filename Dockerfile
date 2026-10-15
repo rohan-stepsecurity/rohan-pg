@@ -70,11 +70,7 @@ RUN set -eux; \
         agent_sha="995c1157c2764d2b09ba369fc2583104096cfb9a40c09af4b00b77e32651216b"; \
     fi; \
     curl -fsSLO "https://packages.stepsecurity.io/self-hosted/${agent_tar}"; \
-    echo "${agent_sha}  ${agent_tar}" | sha256sum -c -; \
-    tar -xzf "${agent_tar}"; \
-    rm -f "${agent_tar}"; \
-    chmod +x /home/agent/agent
-
+    echo "${agent_sha}  ${agent_tar}" | sha256sum -c -
 # The agent is not run as a service; the pre-job hook starts it.
 # agent.json (with API_KEY from the environment) is handled at runtime,
 # not baked into the image.
