@@ -4,7 +4,9 @@ FROM docker.io/library/ubuntu:22.04
 ARG DEBIAN_FRONTEND=noninteractive
 ARG HOOKS_VERSION=v1.4.0
 
-# Base tooling that CodeBuild and most builds expect.
+# Base tooling that CodeBuild and most builds expect, plus the GitHub
+# Actions runner's .NET dependencies (libicu70, libkrb5-3, zlib1g,
+# libssl3, liblttng-ust1).
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         ca-certificates \
@@ -15,7 +17,13 @@ RUN apt-get update && \
         jq \
         sudo \
         gnupg \
-        lsb-release && \
+        lsb-release \
+        tar \
+        libicu70 \
+        libkrb5-3 \
+        zlib1g \
+        libssl3 \
+        liblttng-ust1 && \
     rm -rf /var/lib/apt/lists/*
 
 # ------------------------------------------------------------------
