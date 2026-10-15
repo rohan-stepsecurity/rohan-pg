@@ -53,9 +53,7 @@ RUN set -eux; \
     chmod +x /home/agent/agent
 
 # The agent is not run as a service; the pre-job hook starts it.
-# agent.json contains the API key, so it is written at runtime from the
-# API_KEY env var by configure-agent.sh rather than baked into the image.
-COPY configure-agent.sh /opt/step-security/configure-agent.sh
-RUN chmod +x /opt/step-security/configure-agent.sh
+# agent.json (with API_KEY from the environment) is handled at runtime,
+# not baked into the image.
 
 WORKDIR /codebuild
