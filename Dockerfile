@@ -2,7 +2,7 @@
 FROM docker.io/library/ubuntu:22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
-ARG HOOKS_VERSION=v1.4.0
+ARG HOOKS_VERSION=v1.3.0
 
 # Base tooling that CodeBuild and most builds expect, plus the GitHub
 # Actions runner's .NET dependencies (libicu70, libkrb5-3, zlib1g,
