@@ -46,7 +46,7 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v6
         with:
-          context: codebuild-image
+          context: ./
           file: Dockerfile
           platforms: linux/amd64
           push: true
