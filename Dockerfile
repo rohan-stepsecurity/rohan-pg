@@ -26,15 +26,30 @@ RUN apt-get update && \
         liblttng-ust1 && \
     rm -rf /var/lib/apt/lists/*
 
+# Node.js is required to run the StepSecurity job hooks (pre.js / post.js).
+# Ubuntu 22.04's apt nodejs is too old, so use NodeSource.
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+    apt-get install -y --no-install-recommends nodejs && \
+    rm -rf /var/lib/apt/lists/*
+
 # ------------------------------------------------------------------
 # 1. StepSecurity GitHub Actions runner job hooks
 # ------------------------------------------------------------------
-RUN mkdir -p /opt/step-security && \
+RUN mkdir -p /opt/step-security/hooks && \
     curl -fsSL "https://github.com/step-security/gha-runner-job-hooks/releases/download/${HOOKS_VERSION}/pre.js" \
-        -o /opt/step-security/pre-job-hook.sh && \
+        -o /opt/step-security/hooks/pre.js && \
     curl -fsSL "https://github.com/step-security/gha-runner-job-hooks/releases/download/${HOOKS_VERSION}/post.js" \
-        -o /opt/step-security/post-job-hook.sh && \
-    chmod +x /opt/step-security/pre-job-hook.sh /opt/step-security/post-job-hook.sh
+        -o /opt/step-security/hooks/post.js && \
+    for hook in pre post; do \
+        printf '%s\n' \
+            '#!/bin/bash' \
+            'export STEP_HOOK_MODE="vm"' \
+            'export STEP_AGENT_ROOT="/home/agent"' \
+            'preserved_env="$(compgen -e | paste -sd, -)"' \
+            "sudo --preserve-env=\"\$preserved_env\" env node /opt/step-security/hooks/${hook}.js" \
+            > "/opt/step-security/${hook}-job-hook.sh"; \
+        chmod 0755 "/opt/step-security/${hook}-job-hook.sh"; \
+    done
 
 # Picked up by the GitHub Actions runner if this image is used as a runner
 # (e.g. CodeBuild-hosted GitHub Actions runners). Harmless otherwise.
